@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../styles/signin.css"> <!-- Link to your CSS file -->
+  
+</head>
+<body>
+  <div class="container">
+    <!-- Left section with image -->
+    <div class="left-section">
+    </div>
+
+    <!-- Right section with form -->
+    <div class="right-section">
+      <h2>Login</h2>
+      <form action="/submit-login" method="post"> <!-- Adjust action to backend endpoint -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <!-- Forgot Password Link -->
+        <div class="forgot-password">
+          <a href="forgot-pasword.html">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <!-- First-time user section -->
+      <div class="first-time-user">
+        <p>First time here? <a href="signup.html" target="_blank">Sign up now</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
